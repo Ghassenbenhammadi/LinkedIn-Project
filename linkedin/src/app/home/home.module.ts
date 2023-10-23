@@ -1,3 +1,4 @@
+import { AllPostsComponent } from './components/all-posts/all-posts.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
@@ -27,7 +28,8 @@ import { ModalComponent } from './components/start-post/modal/modal.component';
     ProfileSummaryComponent,
     StartPostComponent,
     AdvertisingComponent,
-    ModalComponent
+    ModalComponent,
+    AllPostsComponent
   ]
 })
 export class HomePageModule {}

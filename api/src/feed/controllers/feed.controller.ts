@@ -22,9 +22,12 @@ constructor(
     // }
 
     @Get()
-    findSelected(@Query('take') take:number=1, @Query('skip') skip: number = 1):Observable<FeedPost[]> {
-        take = take > 20? 20: take;
-        return this.feedService.findPosts(take,skip);
+    findSelected(
+      @Query('take') take: number = 1,
+      @Query('skip') skip: number = 1,
+    ): Observable<FeedPost[]> {
+      take = take > 20 ? 20 : take;
+      return this.feedService.findPosts(take, skip);
     }
 
     @Put(':id')
