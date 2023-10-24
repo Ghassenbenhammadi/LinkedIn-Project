@@ -8,7 +8,7 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./modal.component.scss'],
 })
 export class ModalComponent  implements OnInit {
-@ViewChild('form') form:any;
+@ViewChild('form') form!:NgForm;
   constructor(public modalController: ModalController) { }
 
   ngOnInit() {}
